@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuyet Le | Frontend Developer</title>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/f97e9a7da6.js" crossorigin="anonymous"></script>
+
+    <!-- Load Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- HTML follows BEM naming conventions -->
+    <header>
+        <nav class="nav">
+            <div class="container nav__container">
+                <div class="logo">
+                    <a href="#" class="logo__title">
+                        TOOWEE</br>
+                        <span class="logo__subtitle">Front-end Developer</span>
+                    </a>
+                </div>
+                <!-- Navigation starts as empty UL that will be populated with JS -->
+                <ul id="nav__list">
+                    <li class="nav__link">Home</li>
+                    <li class="nav__link">About Me</li>
+                    <li class="nav__link">My Work</li>
+                    <li class="nav__link">Contact</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <header class="container hero__container">
+            <div class="headline">
+                <h1>Hi, I'm</br>Tuyet Le</h1>
+                <div class="headline__title">
+                    <p>front-end dev</p>
+                </div>
+                <div class="scroll-down"></div>
+            </div>
+        </header>
+
+        <!-- Each Section has an ID (used for the anchor) and a data attribute that will populate the LI node. Adding more sections will automatically populate the nav. -->
+        <!-- About Section -->
+        <section id="section1" data-nav="about">
+            <div class="container about__container">
+                <h2>About me</h2>
+                <p>I'm a front-end developer based in London. My love of the digital world sparked when I got my first computer and created <a href="https://en.wikipedia.org/wiki/Piczo" target="_blank">Piczo</a> websites from scratch in HTML. Fast forward to 2019, I decided to start my coding journey to career-change into the sector. This stemmed while speaking with inspiring individuals in the tech community including <a href="http://codebar.io" target="_blank">codebar</a> and <a href="https://www.codefirstgirls.org.uk/" target="_blank">Code First Girls</a>. I'm currently enrolled in a nanodegree program to prepare me on every aspect of being a web developer.</p>
+
+                <p>My goal is to continue building my skills including learning more JavaScript and React next, and contribute back to the community who have helped me so much on <a href="https://toowee.dev" target="_blank">my own coding journey</a>.</p>
+
+                <p>Tech I'm familiar with:</p>
+                <ul class="skills-list">
+                    <li class="skill">JavaScript</li>
+                    <li class="skill">HTML5</li>
+                    <li class="skill">CSS3</li>
+                    <li class="skill">SASS</li>
+                    <li class="skill">Bootstrap</li>
+                    <li class="skill">Node.js</li>
+                    <li class="skill">Express</li>
+                    <li class="skill">Git/Github</li>
+                </ul>
+
+                <button class="about__cv">Download CV</button>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="section2" data-nav="projects">
+            <div class="container projects__container">
+                <h2>My Work</h2>
+                <div class="projects__grid">
+                    <div class="projects__card">
+                        <i class="fas fa-cloud-sun fa-5x"></i>
+                        <h3 class="projects__title">weather app</h3>
+                        <p class="projects__summary">An app that fetches data on the user's local weather from an external API</p>
+                        <p class="projects__tech">JavaScript Fetch API, HTML, CSS, Bootstrap</p>
+                        <div class="projects__links">
+                            <a href="#" class="link__live" target="_blank">View project</a>
+                            <a href="#" class="link__github" target="_blank">View GitHub</a>
+                        </div>
+                    </div>
+                    <div class="projects__card">
+                        <i class="fas fa-user-edit fa-5x"></i>
+                        <h3 class="projects__title">toowee blog</h3>
+                        <p class="projects__summary">My first personal blog about my coding journey</p>
+                        <p class="projects__tech">JavaScript, HTML, CSS</p>
+                        <div class="projects__links">
+                            <a href="#" class="link__live" target="_blank">View project</a>
+                            <a href="#" class="link__github" target="_blank">View GitHub</a>
+                        </div>
+                    </div>
+                    <div class="projects__card">
+                        <i class="far fa-copy fa-5x"></i>
+                        <h3 class="projects__title">virtual toowee</h3>
+                        <p class="projects__summary">A clone of virtualtoowee.com, a website for a virtual assistance service that was originally built using WordPress</p>
+                        <p class="projects__tech">JavaScript, HTML, CSS/SCSS</p>
+                        <div class="projects__links">
+                            <a href="#" class="link__live" target="_blank">View project</a>
+                            <a href="#" class="link__github" target="_blank">View GitHub</a>
+                        </div>
+                    </div>
+                    <div class="projects__card">
+                        <i class="fas fa-ellipsis-h fa-5x"></i>
+                        <h3 class="projects__title">next project</h3>
+                        <p class="projects__summary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure laborum unde atque suscipit. Aspernatur, tempora</p>
+                        <p class="projects__tech">JavaScript, HTML, CSS/SCSS</p>
+                        <div class="projects__links">
+                            <a href="#" class="link__live" target="_blank">View project</a>
+                            <a href="#" class="link__github" target="_blank">View GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="section3" data-nav="contact">
+            <div class="container contact__container">
+                <h2>Contact <i class="far fa-envelope"></i></h2>
+                <p>You can reach me anytime on any of the below:</p>
+                <div class="contact__form">
+                    <form name="form" action="POST" data-netlify="true">
+                        <div class="field">
+                            <input type="text" name="name" id="name" placeholder="Name" required>
+                        </div>
+                        <div class="field">
+                            <input type="email" name="email" id="email" placeholder="Email" required>
+                        </div>
+                        <div class="field">
+                            <textarea name="message" id="message" placeholder="Message" cols="60" rows="10"></textarea>
+                        </div>
+                        <div>
+                            <input type="submit" class="submit" value="Send">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="contact__social">
+                    <a href="mailto:toowee.le@gmail.com"><i class="fas fa-envelope fa-2x"></i></a>
+                    <a href="https://twitter.com/toowee_" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/in/toowee/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                    <a href="#" target="_blank"><i class="fas fa-file-pdf fa-2x"></i></a>
+                    <a href="http://toowee.dev" target="_blank"><i class="fas fa-pen fa-2x"></i></a>
+                    <a href="https://github.com/toowee-le" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="page__footer">
+        <div class="footer__credit">Created and designed by Tuyet with &#128155; 2020 &copy;</div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
