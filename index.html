@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuyet Le | Frontend Developer</title>
+    <!-- Load Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- HTML follows BEM naming conventions -->
+    <header class="page__header">
+        <nav class="navbar__menu">
+            <!-- Navigation starts as empty UL that will be populated with JS -->
+            <ul id="navbar__list"></ul>
+        </nav>
+    </header>
+    <main>
+        <header class="main__hero"></header>
+    </main>
+    <!-- Each Section has an ID (used for the anchor) and a data attribute that will populate the LI node. Adding more sections will automatically populate the nav. -->
+    <section id="section1" data-nav="skills"></section>
+    <section id="section2" data-nav="about"></section>
+    <section id="section3" data-nav="projects"></section>
+    <section id="section3" data-nav="blog"></section>
+    <section id="section4" data-nav="contact"></section>
+    <footer class="page__footer">
+
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+</html>
