@@ -82,4 +82,41 @@ body a {
   color: #2A2A2A;
   cursor: pointer;
 }
+
+/* Hero Section */
+#section1 {
+  height: 100vh;
+  font-family: "Space Mono", monospace;
+  border: 1px solid black;
+}
+
+#section1 .hero__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  border: 1px solid blue;
+}
+
+#section1 .hero__container .headline {
+  margin: auto;
+}
+
+#section1 .hero__container .headline .hero__title {
+  font-size: 4.5rem;
+}
+
+#section1 .hero__container .headline .hero__role {
+  background: #EF8C86;
+  padding: .2em .4em;
+  margin-top: .8em;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
 /*# sourceMappingURL=style.css.map */

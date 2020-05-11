@@ -75,3 +75,34 @@ body {
         }
     }
 }
+
+/* Hero Section */
+#section1 {
+    height: 100vh;
+    font-family: $font-header;
+    border: 1px solid black;
+
+    .hero__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        border: 1px solid blue;
+
+        .headline {
+            margin: auto;
+
+            .hero__title {
+                font-size: 4.5rem;
+            }
+
+            .hero__role {
+                background: $main-pink;
+                padding: .2em .4em;
+                margin-top: .8em;
+                font-size: 1.5rem;
+                letter-spacing: 2px;
+            }
+        }
+    }
+}
