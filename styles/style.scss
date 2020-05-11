@@ -25,11 +25,16 @@ body {
     padding: 0 1em;
 }
 
+.page__header,
+.page__footer,
+#section1 {
+    background: $main-yellow;
+}
+
 .nav__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 2em;
 
     .logo {
         line-height: 16px;

@@ -24,6 +24,12 @@ body a {
   padding: 0 1em;
 }
 
+.page__header,
+.page__footer,
+#section1 {
+  background: #FCB677;
+}
+
 .nav__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -34,7 +40,6 @@ body a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 2em;
 }
 
 .nav__container .logo {
