@@ -87,7 +87,6 @@ body a {
 #section1 {
   height: 100vh;
   font-family: "Space Mono", monospace;
-  border: 1px solid black;
 }
 
 #section1 .hero__container {
@@ -101,7 +100,6 @@ body a {
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
-  border: 1px solid blue;
 }
 
 #section1 .hero__container .headline {
@@ -118,5 +116,53 @@ body a {
   margin-top: .8em;
   font-size: 1.5rem;
   letter-spacing: 2px;
+}
+
+#section1 .scroll-down {
+  display: block;
+  position: absolute;
+  bottom: 10px;
+  -webkit-animation: bounce 2s ease infinite;
+          animation: bounce 2s ease infinite;
+}
+
+#section1 .scroll-down a {
+  text-decoration: none;
+  color: #FFF;
+  cursor: pointer;
+}
+
+#section1 .scroll-down a i {
+  text-shadow: 0px 3px 16px #272634;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 /*# sourceMappingURL=style.css.map */
