@@ -23,4 +23,51 @@ body a {
   margin: 0 auto;
   padding: 0 1em;
 }
+
+.nav__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2em;
+}
+
+.nav__container .logo {
+  line-height: 16px;
+}
+
+.nav__container .logo__title {
+  color: #2A2A2A;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  padding-bottom: 0;
+}
+
+.nav__container .logo__subtitle {
+  color: #05779E;
+  font-size: .64rem;
+  font-family: "Space Mono", monospace;
+}
+
+.nav__container #nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav__container #nav__list .nav__link {
+  display: inline-block;
+  text-transform: uppercase;
+  padding-left: 2em;
+}
+
+.nav__container #nav__list .nav__link a {
+  cursor: pointer;
+}
 /*# sourceMappingURL=style.css.map */

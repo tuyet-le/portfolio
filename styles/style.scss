@@ -24,3 +24,42 @@ body {
     margin: 0 auto;
     padding: 0 1em;
 }
+
+.nav__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2em;
+
+    .logo {
+        line-height: 16px;
+    }
+
+    .logo__title {
+        color: $main-font-color;
+        font-size: 1.5rem;
+        font-weight: 700;
+        letter-spacing: 3px;
+        padding-bottom: 0;
+    }
+
+    .logo__subtitle {
+        color: $main-blue;
+        font-size: .64rem;
+        font-family: $font-header;
+    }
+
+    #nav__list {
+        display: flex;
+
+        .nav__link {
+            display: inline-block;
+            text-transform: uppercase;
+            padding-left: 2em;
+            
+            a {
+                cursor: pointer;
+            }
+        }
+    }
+}
