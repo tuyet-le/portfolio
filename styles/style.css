@@ -30,6 +30,10 @@ body a {
   background: #FCB677;
 }
 
+.nav {
+  padding-top: 2em;
+}
+
 .nav__container {
   display: -webkit-box;
   display: -ms-flexbox;

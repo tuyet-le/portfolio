@@ -31,6 +31,10 @@ body {
     background: $main-yellow;
 }
 
+.nav {
+    padding-top: 2em;
+}
+
 .nav__container {
     display: flex;
     justify-content: space-between;
