@@ -77,6 +77,7 @@ body a {
 }
 
 .nav__container #nav__list .nav__link a {
+  color: #2A2A2A;
   cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
