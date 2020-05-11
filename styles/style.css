@@ -24,12 +24,14 @@ body a {
   padding: 0 1em;
 }
 
+/* Header and Footer Styles */
 .page__header,
 .page__footer,
 #section1 {
   background: #FCB677;
 }
 
+/* Navbar Styles */
 .nav {
   padding-top: 2em;
 }
