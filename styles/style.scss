@@ -1,0 +1,15 @@
+@import 'config';
+
+/* ---- Base Rules ---- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: $page-background;
+    color: $main-font-color;
+    font-family: $font-stack;
+}
+
