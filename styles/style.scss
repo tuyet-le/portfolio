@@ -44,13 +44,14 @@ body {
 
     .logo {
         line-height: 16px;
+        cursor: pointer;
     }
 
     .logo__title {
         color: $main-font-color;
         font-size: 1.5rem;
         font-weight: 700;
-        letter-spacing: 3px;
+        letter-spacing: 3.7px;
         padding-bottom: 0;
     }
 
@@ -63,6 +64,7 @@ body {
     #nav__list {
         display: flex;
 
+        // Nav links will dynamically be added in JS
         .nav__link {
             display: inline-block;
             text-transform: uppercase;
@@ -86,7 +88,7 @@ body {
         justify-content: center;
         align-items: center;
         height: 100%;
-        
+
         .headline {
             margin: auto;
 
@@ -98,7 +100,7 @@ body {
                 background: $main-pink;
                 padding: .2em .4em;
                 margin-top: .8em;
-                font-size: 1.5rem;
+                font-size: 1.56rem;
                 letter-spacing: 2px;
             }
         }

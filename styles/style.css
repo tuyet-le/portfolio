@@ -50,13 +50,14 @@ body a {
 
 .nav__container .logo {
   line-height: 16px;
+  cursor: pointer;
 }
 
 .nav__container .logo__title {
   color: #2A2A2A;
   font-size: 1.5rem;
   font-weight: 700;
-  letter-spacing: 3px;
+  letter-spacing: 3.7px;
   padding-bottom: 0;
 }
 
@@ -114,7 +115,7 @@ body a {
   background: #EF8C86;
   padding: .2em .4em;
   margin-top: .8em;
-  font-size: 1.5rem;
+  font-size: 1.56rem;
   letter-spacing: 2px;
 }
 
