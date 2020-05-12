@@ -84,8 +84,7 @@ a:hover {
 }
 
 .container--about,
-.container--projects,
-.container--contact {
+.container--projects {
   margin: 4em auto;
 }
 
@@ -93,6 +92,7 @@ a:hover {
 .section__title {
   position: relative;
   margin-bottom: 1.5em;
+  opacity: .99;
 }
 
 .section__title:before {
@@ -114,7 +114,7 @@ a:hover {
   right: 0;
   height: 18px;
   width: 60%;
-  z-index: -2;
+  z-index: 3;
   border: 1px solid #05779E;
   background: #05779E;
 }
@@ -328,5 +328,11 @@ a:hover {
 
 .projects__grid .fa-copy, .projects__grid .projects--purple {
   color: #826782;
+}
+
+/* Contacts Section */
+#section4 {
+  background: #FCB677;
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */
