@@ -20,6 +20,11 @@ h3 {
   text-align: center;
 }
 
+.section__title {
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
 a {
   text-decoration: none;
 }
@@ -73,6 +78,36 @@ a {
 .container--projects,
 .container--contact {
   margin: 4em auto;
+}
+
+/* Sections */
+.section__title {
+  position: relative;
+  margin-bottom: 1.5em;
+}
+
+.section__title:before {
+  content: "";
+  position: absolute;
+  top: 60%;
+  left: 0;
+  height: 18px;
+  width: 60%;
+  z-index: -1;
+  border: 1px solid #EF8C86;
+  background: #EF8C86;
+}
+
+.section__title:after {
+  content: "";
+  position: absolute;
+  top: 90%;
+  right: 0;
+  height: 18px;
+  width: 60%;
+  z-index: -2;
+  border: 1px solid #05779E;
+  background: #05779E;
 }
 
 /* Header and Footer Styles */
