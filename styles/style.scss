@@ -45,6 +45,25 @@ a {
     padding: 0 1em;
 }
 
+.container--nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container--hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.container--about,
+.container--projects,
+.container--contact {
+    margin: 4em auto;
+}
+
  /* Header and Footer Styles */
 .page__header,
 .page__footer,
@@ -55,12 +74,6 @@ a {
 /* Navbar Styles */
 .nav {
     padding-top: 2em;
-}
-
-.nav__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
     .logo {
         line-height: 16px;
@@ -103,15 +116,8 @@ a {
     height: 100vh;
     font-family: $font-header;
 
-    .hero__container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-
-        .headline {
-            margin: auto;
-        }
+    .headline {
+        margin: auto;
     }
 
     .scroll-down {
@@ -144,4 +150,3 @@ a {
     }
 }
 
-/* About Section */

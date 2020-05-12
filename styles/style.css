@@ -44,19 +44,7 @@ a {
   padding: 0 1em;
 }
 
-/* Header and Footer Styles */
-.page__header,
-.page__footer,
-#section1 {
-  background: #FCB677;
-}
-
-/* Navbar Styles */
-.nav {
-  padding-top: 2em;
-}
-
-.nav__container {
+.container--nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -68,49 +56,7 @@ a {
           align-items: center;
 }
 
-.nav__container .logo {
-  line-height: 16px;
-  cursor: pointer;
-}
-
-.nav__container .logo__title {
-  color: #2A2A2A;
-  font-size: 1.5rem;
-  font-weight: 700;
-  letter-spacing: 3.7px;
-  padding-bottom: 0;
-}
-
-.nav__container .logo__subtitle {
-  color: #05779E;
-  font-size: .64rem;
-  font-family: "Space Mono", monospace;
-}
-
-.nav__container #nav__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.nav__container #nav__list .nav__link {
-  display: inline-block;
-  text-transform: uppercase;
-  padding-left: 2em;
-}
-
-.nav__container #nav__list .nav__link a {
-  color: #2A2A2A;
-  cursor: pointer;
-}
-
-/* Hero Section */
-#section1 {
-  height: 100vh;
-  font-family: "Space Mono", monospace;
-}
-
-#section1 .hero__container {
+.container--hero {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -123,7 +69,67 @@ a {
   height: 100%;
 }
 
-#section1 .hero__container .headline {
+.container--about,
+.container--projects,
+.container--contact {
+  margin: 4em auto;
+}
+
+/* Header and Footer Styles */
+.page__header,
+.page__footer,
+#section1 {
+  background: #FCB677;
+}
+
+/* Navbar Styles */
+.nav {
+  padding-top: 2em;
+}
+
+.nav .logo {
+  line-height: 16px;
+  cursor: pointer;
+}
+
+.nav .logo__title {
+  color: #2A2A2A;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 3.7px;
+  padding-bottom: 0;
+}
+
+.nav .logo__subtitle {
+  color: #05779E;
+  font-size: .64rem;
+  font-family: "Space Mono", monospace;
+}
+
+.nav #nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav #nav__list .nav__link {
+  display: inline-block;
+  text-transform: uppercase;
+  padding-left: 2em;
+}
+
+.nav #nav__list .nav__link a {
+  color: #2A2A2A;
+  cursor: pointer;
+}
+
+/* Hero Section */
+#section1 {
+  height: 100vh;
+  font-family: "Space Mono", monospace;
+}
+
+#section1 .headline {
   margin: auto;
 }
 
@@ -174,6 +180,4 @@ a {
             transform: translateY(0);
   }
 }
-
-/* About Section */
 /*# sourceMappingURL=style.css.map */
