@@ -11,10 +11,30 @@ body {
     background: $page-background;
     color: $main-font-color;
     font-family: $font-stack;
+}
 
-    a {
-        text-decoration: none;
-    }
+/* Typography */
+h2,
+h3 {
+    font-family: $font-header;
+    text-transform: lowercase;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hero__title {
+    font-size: 4.5rem;
+}
+
+.hero__role {
+    background: $main-pink;
+    padding: .2em .4em;
+    margin-top: .8em;
+    font-size: 1.56rem;
+    letter-spacing: 2px;
 }
 
 /* ---- Layout Rules ---- */
@@ -91,18 +111,6 @@ body {
 
         .headline {
             margin: auto;
-
-            .hero__title {
-                font-size: 4.5rem;
-            }
-
-            .hero__role {
-                background: $main-pink;
-                padding: .2em .4em;
-                margin-top: .8em;
-                font-size: 1.56rem;
-                letter-spacing: 2px;
-            }
         }
     }
 
@@ -135,3 +143,5 @@ body {
         }
     }
 }
+
+/* About Section */

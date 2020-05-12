@@ -12,8 +12,28 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-body a {
+/* Typography */
+h2,
+h3 {
+  font-family: "Space Mono", monospace;
+  text-transform: lowercase;
+  text-align: center;
+}
+
+a {
   text-decoration: none;
+}
+
+.hero__title {
+  font-size: 4.5rem;
+}
+
+.hero__role {
+  background: #EF8C86;
+  padding: .2em .4em;
+  margin-top: .8em;
+  font-size: 1.56rem;
+  letter-spacing: 2px;
 }
 
 /* ---- Layout Rules ---- */
@@ -107,18 +127,6 @@ body a {
   margin: auto;
 }
 
-#section1 .hero__container .headline .hero__title {
-  font-size: 4.5rem;
-}
-
-#section1 .hero__container .headline .hero__role {
-  background: #EF8C86;
-  padding: .2em .4em;
-  margin-top: .8em;
-  font-size: 1.56rem;
-  letter-spacing: 2px;
-}
-
 #section1 .scroll-down {
   display: block;
   position: absolute;
@@ -166,4 +174,6 @@ body a {
             transform: translateY(0);
   }
 }
+
+/* About Section */
 /*# sourceMappingURL=style.css.map */
