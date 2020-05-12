@@ -116,7 +116,8 @@ a {
  /* Header and Footer Styles */
 .page__header,
 .page__footer,
-#section1 {
+#section1,
+#section4 {
     background: $main-yellow;
 }
 
@@ -301,6 +302,35 @@ a {
 }
 
 /* Contacts Section */
-#section4 {
-    background: $main-yellow;
+.contact__form {
+    width: 50%;
+    margin: 0 auto;
+
+    input[type=text],
+    input[type=email],
+    input[type=submit],
+    textarea {
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid $border-color;
+        outline: none;
+        padding: 15px 20px;
+        margin: 5px;
+        letter-spacing: 1px;
+    }
+
+    input[type=submit] {
+        text-transform: uppercase;
+        background: $main-purple;
+        border: 1px solid $main-purple;
+        color: #FFF;
+        font-weight: 700;
+        cursor: pointer;
+        transition: .2s ease;
+
+        &:hover {
+            background: #EF8C86;
+            border: 1px solid #EF8C86;
+        }
+    }
 }

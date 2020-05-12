@@ -127,7 +127,8 @@ a:hover {
 /* Header and Footer Styles */
 .page__header,
 .page__footer,
-#section1 {
+#section1,
+#section4 {
   background: #FCB677;
 }
 
@@ -336,7 +337,37 @@ a:hover {
 }
 
 /* Contacts Section */
-#section4 {
-  background: #FCB677;
+.contact__form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.contact__form input[type=text],
+.contact__form input[type=email],
+.contact__form input[type=submit],
+.contact__form textarea {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #E8E6E6;
+  outline: none;
+  padding: 15px 20px;
+  margin: 5px;
+  letter-spacing: 1px;
+}
+
+.contact__form input[type=submit] {
+  text-transform: uppercase;
+  background: #826782;
+  border: 1px solid #826782;
+  color: #FFF;
+  font-weight: 700;
+  cursor: pointer;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.contact__form input[type=submit]:hover {
+  background: #EF8C86;
+  border: 1px solid #EF8C86;
 }
 /*# sourceMappingURL=style.css.map */
