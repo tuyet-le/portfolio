@@ -30,6 +30,13 @@ h3 {
 
 a {
     text-decoration: none;
+    color: $main-purple;
+    transition: .2s ease;
+
+    &:hover {
+        color: $main-pink;
+        border-bottom: 4px solid $main-pink;
+    }
 }
 
 .hero__title {
@@ -123,12 +130,14 @@ a {
         font-weight: 700;
         letter-spacing: 3.7px;
         padding-bottom: 0;
+        border: none;
     }
 
     .logo__subtitle {
         color: $main-blue;
         font-size: .64rem;
         font-family: $font-header;
+        border: none;
     }
 
     #nav__list {
@@ -167,6 +176,7 @@ a {
             text-decoration: none;
             color: #FFF;
             cursor: pointer;
+            border: none;
 
             i {
                 text-shadow: 0px 3px 16px #272634;
@@ -186,4 +196,3 @@ a {
         }
     }
 }
-
