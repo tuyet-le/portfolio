@@ -228,7 +228,7 @@ a:hover {
   }
 }
 
-/* About section */
+/* About Section */
 .tech-grid {
   display: -ms-grid;
   display: grid;
@@ -274,5 +274,59 @@ a:hover {
 
 .btn .btn__cv:hover:before {
   width: 100%;
+}
+
+/* Projects Section */
+.projects__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2em;
+}
+
+.projects__grid .projects__title {
+  font-size: 1.5rem;
+}
+
+.projects__grid a {
+  border: none;
+}
+
+.projects__grid .projects__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding: 1em;
+  border: 1px solid #E8E6E6;
+}
+
+.projects__grid .projects__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.projects__grid .fa-cloud-sun, .projects__grid .projects--yellow {
+  color: #FCB677;
+}
+
+.projects__grid .fa-user-edit, .projects__grid .projects--pink {
+  color: #EF8C86;
+}
+
+.projects__grid .fa-copy, .projects__grid .projects--purple {
+  color: #826782;
 }
 /*# sourceMappingURL=style.css.map */

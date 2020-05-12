@@ -197,7 +197,7 @@ a {
     }
 }
 
-/* About section */
+/* About Section */
 .tech-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -239,5 +239,58 @@ a {
 
     .btn__cv:hover:before {
         width: 100%;
+    }
+}
+
+/* Projects Section */
+.projects__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2em;
+
+    .projects__title {
+        font-size: 1.5rem;
+    }
+
+    a {
+        border: none;
+    }
+
+    .projects__card {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        text-align: center;
+        padding: 1em;
+        border: 1px solid $border-color;
+    }
+
+    .projects__links {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .fa-cloud-sun {
+        color: $main-yellow;
+    }
+
+    .projects--yellow {
+        @extend .fa-cloud-sun;
+    }
+
+    .fa-user-edit {
+        color: $main-pink;
+    }
+
+    .projects--pink {
+        @extend .fa-user-edit;
+    }
+
+    .fa-copy {
+        color: $main-purple;
+    }
+
+    .projects--purple {
+        @extend .fa-copy;
     }
 }
