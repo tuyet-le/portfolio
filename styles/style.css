@@ -132,6 +132,12 @@ a:hover {
   background: #FCB677;
 }
 
+.page__footer {
+  text-align: center;
+  padding: 1em 0;
+  font-size: .8rem;
+}
+
 /* Navbar Styles */
 .nav {
   padding-top: 2em;
