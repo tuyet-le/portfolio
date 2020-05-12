@@ -236,10 +236,43 @@ a:hover {
       grid-template-columns: repeat(5, 1fr);
   grid-gap: 3em;
   justify-items: center;
-  margin-top: 1em;
+  margin: 1.5em 0 2.5em;
 }
 
 .tech-grid__logo {
   width: 110px;
+}
+
+.btn {
+  text-align: center;
+}
+
+.btn .btn__cv {
+  position: relative;
+  display: inline-block;
+  padding: .7em 1.5em;
+  z-index: 1;
+  color: #2A2A2A;
+  letter-spacing: 1px;
+  font-weight: 700;
+  border: none;
+}
+
+.btn .btn__cv:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #FCB677;
+  width: 10px;
+  height: 100%;
+  border-radius: 5px;
+  z-index: -1;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.btn .btn__cv:hover:before {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
