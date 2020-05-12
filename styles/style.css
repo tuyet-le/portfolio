@@ -88,6 +88,11 @@ a:hover {
   margin: 4em auto;
 }
 
+.container--contact {
+  padding-top: 3.8em;
+  text-align: center;
+}
+
 /* Sections */
 .section__title {
   position: relative;
@@ -333,6 +338,5 @@ a:hover {
 /* Contacts Section */
 #section4 {
   background: #FCB677;
-  margin-bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */

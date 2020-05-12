@@ -77,6 +77,11 @@ a {
     margin: 4em auto;
 }
 
+.container--contact {
+    padding-top: 3.8em;
+    text-align: center;
+}
+
 /* Sections */
 .section__title {
     position: relative;
@@ -298,5 +303,4 @@ a {
 /* Contacts Section */
 #section4 {
     background: $main-yellow;
-    margin-bottom: 0;
 }
