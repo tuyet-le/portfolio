@@ -415,3 +415,19 @@ a {
         }
     }
 }
+
+#scrollToTopBtn {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 50%;
+    padding: .5em;
+    outline: none;
+    border: 1px solid $main-yellow;
+    background: transparent;
+    cursor: pointer;
+
+    i {
+        color: $main-yellow;
+    }
+}

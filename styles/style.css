@@ -491,4 +491,20 @@ a:hover {
             transform: translate3d(3px, 0, 0);
   }
 }
+
+#scrollToTopBtn {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 50%;
+  padding: .5em;
+  outline: none;
+  border: 1px solid #FCB677;
+  background: transparent;
+  cursor: pointer;
+}
+
+#scrollToTopBtn i {
+  color: #FCB677;
+}
 /*# sourceMappingURL=style.css.map */
