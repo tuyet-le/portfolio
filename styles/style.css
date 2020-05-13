@@ -415,7 +415,7 @@ a:hover {
   background: #826782;
   border: 1px solid #826782;
   color: #FFF;
-  font-weight: 700;
+  font-size: 1rem;
   cursor: pointer;
   -webkit-transition: .2s ease;
   transition: .2s ease;
