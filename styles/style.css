@@ -136,11 +136,13 @@ a:hover {
   text-align: center;
   padding: 1em 0;
   font-size: .8rem;
+  border: 1px solid #FCB677;
 }
 
 /* Navbar Styles */
 .nav {
   padding-top: 2em;
+  border: 1px solid #FCB677;
 }
 
 .nav .logo {

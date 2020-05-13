@@ -125,11 +125,13 @@ a {
     text-align: center;
     padding: 1em 0;
     font-size: .8rem;
+    border: 1px solid $main-yellow;
 }
 
 /* Navbar Styles */
 .nav {
     padding-top: 2em;
+    border: 1px solid $main-yellow;
 
     .logo {
         line-height: 16px;
