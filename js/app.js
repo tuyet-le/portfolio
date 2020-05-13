@@ -4,6 +4,7 @@
  * 1. Dynamically build the navigation as an unordered list.
  * 2. Highlight the side nav item of section in viewport.
  * 3. Scroll to anchors from both navigations.
+ * 4. Add a scroll to top button.
  * 
  * JS Version: ES2015/ES6
  * 
@@ -13,6 +14,7 @@
 
 /* --- Define Global Variables --- */
 const sections = document.querySelectorAll('section');
+const scrollToTopButton = document.getElementById('scrollToTopBtn');
 
 buildNav();
 createObserver();
@@ -75,3 +77,16 @@ function activeSection(entries) {
         }
     })
 }
+
+/**
+ *
+ *  Scroll to top event
+ */
+
+scrollToTopButton.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
+});
