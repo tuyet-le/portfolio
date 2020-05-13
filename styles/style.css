@@ -343,10 +343,6 @@ a:hover {
   font-size: 1.5rem;
 }
 
-.projects__grid a {
-  border: none;
-}
-
 .projects__grid .projects__card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -367,9 +363,20 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.projects__grid .projects__links a {
+  color: #2A2A2A;
+  border: 1px solid #2A2A2A;
+  border-radius: 30px;
+  padding: .6em 1.6em;
+}
+
+.projects__grid .projects__links a:hover {
+  background: #FCB677;
+  color: #2A2A2A;
 }
 
 .projects__grid .fa-cloud-sun, .projects__grid .projects--yellow {
