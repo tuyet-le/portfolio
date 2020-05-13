@@ -191,6 +191,11 @@ a:hover {
   margin: auto;
 }
 
+#section1 .headline .typewriter > .cursor {
+  border-right: 0.1rem solid #353535;
+  padding-right: .1em;
+}
+
 #section1 .scroll-down {
   display: block;
   position: absolute;

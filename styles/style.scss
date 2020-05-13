@@ -176,6 +176,11 @@ a {
 
     .headline {
         margin: auto;
+
+        .typewriter > .cursor {
+            border-right: 0.1rem solid #353535;
+            padding-right: .1em;
+        }
     }
 
     .scroll-down {
