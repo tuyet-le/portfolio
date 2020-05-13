@@ -1,8 +1,6 @@
 /* --- Define Global Variables --- */
 const navList = document.getElementById('nav__list');
 const sections = document.querySelectorAll('section');
-const navLink = document.querySelectorAll('nav__link');
-
 
 buildNav();
 createObserver();
