@@ -1,11 +1,11 @@
-/**
-  * Navigation is built dynamically as an unordered list
- **/
-
 /* --- Define Global Variables --- */
 const navList = document.getElementById('nav__list');
 const sections = document.querySelectorAll('section');
 const navLink = document.querySelectorAll('nav__link');
+
+
+buildNav();
+createObserver();
 
 /* --- Helper Functions --- */
 // Dynamically set multiple attributes to an element at once
@@ -16,6 +16,7 @@ function setAttributes(el, attrs) {
 }
 
 /* --- Main Functions --- */
+/* Navigation is built dynamically as an unordered list */
 function buildNav() {
     // Loop over the sections
     for (section of sections) {
@@ -39,4 +40,30 @@ function buildNav() {
     };
 }
 
-buildNav();
+/* It should be clear on the side nav which section is being viewed on scroll */
+// Create an intersection observer to detect the visibility of a section
+function createObserver() {
+    let sectionOptions = {
+        threshold: 0.7 // When 70% of a section is visible on viewport, execute the observer's callback function (activeSection)
+    };
+
+    let sectionObserver = new IntersectionObserver(activeSection, sectionOptions);
+
+    // Target all the page sections to be observed
+    sections.forEach(section => {
+        sectionObserver.observe(section);
+    });
+}
+
+// Set side nav item to 'active' when 70% of the section is visible
+function activeSection(entries) {
+    entries.forEach(entry => {
+        const sectionId = entry.target.id;
+        const activeAnchor = document.getElementById(`side-nav__${sectionId}`);
+        if (entry.isIntersecting) {
+            activeAnchor.classList.add('active')
+        } else {
+            activeAnchor.classList.remove('active');
+        }
+    })
+}
