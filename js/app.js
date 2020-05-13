@@ -19,7 +19,6 @@ function buildNav() {
 
     // Loop over the sections
     for (section of sections) {
-        console.log(section.id);
         // Create menu links with a classname of 'nav__link'
         const li = document.createElement('li');
         li.classList.add('nav__link');
