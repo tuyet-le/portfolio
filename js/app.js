@@ -1,5 +1,4 @@
 /* --- Define Global Variables --- */
-const navList = document.getElementById('nav__list');
 const sections = document.querySelectorAll('section');
 
 buildNav();
@@ -16,6 +15,8 @@ function setAttributes(el, attrs) {
 /* --- Main Functions --- */
 /* Navigation is built dynamically as an unordered list */
 function buildNav() {
+    const navList = document.getElementById('nav__list');
+
     // Loop over the sections
     for (section of sections) {
         console.log(section.id);
