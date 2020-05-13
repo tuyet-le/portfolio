@@ -1,3 +1,16 @@
+/**
+ * 
+ * Program requirements:
+ * 1. Dynamically build the navigation as an unordered list.
+ * 2. Highlight the side nav item of section in viewport.
+ * 3. Scroll to anchors from both navigations.
+ * 
+ * JS Version: ES2015/ES6
+ * 
+ * JS Standard: ESLint
+ * 
+ */
+
 /* --- Define Global Variables --- */
 const sections = document.querySelectorAll('section');
 
@@ -5,7 +18,12 @@ buildNav();
 createObserver();
 
 /* --- Helper Functions --- */
-// Dynamically set multiple attributes to an element at once
+/**
+ * 
+ * @param {string} el - The element
+ * @param {string} attrs - Multiple attributes to add to the element
+ * @description Add multiple attributes to a single element
+ */
 function setAttributes(el, attrs) {
     for (let key in attrs) {
         el.setAttribute(key, attrs[key]);
@@ -13,36 +31,25 @@ function setAttributes(el, attrs) {
 }
 
 /* --- Main Functions --- */
-/* Navigation is built dynamically as an unordered list */
+// Build menu
 function buildNav() {
     const navList = document.getElementById('nav__list');
 
-    // Loop over the sections
     for (section of sections) {
-        // Create menu links with a classname of 'nav__link'
         const li = document.createElement('li');
         li.classList.add('nav__link');
-
-        // Create anchors to link to page sections
         const anchor = document.createElement('a');
         setAttributes(anchor, {'href': '#'+section.id});
-
-        // Set anchor text to the data value of page sections
         anchor.textContent = `${section.dataset.nav}`;
-
-        // Append anchor menu links
         li.appendChild(anchor);
-
-        // Append menu links to the nav list
         navList.append(li);
     };
 }
 
-/* It should be clear on the side nav which section is being viewed on scroll */
-// Create an intersection observer to detect the visibility of a section
+// Use the Intersection Observer API to detect 50% visibility of a section
 function createObserver() {
     let sectionOptions = {
-        threshold: 0.5 // When 50% of a section is visible on viewport, execute the observer's callback function (activeSection)
+        threshold: 0.5
     };
 
     let sectionObserver = new IntersectionObserver(activeSection, sectionOptions);
@@ -53,7 +60,10 @@ function createObserver() {
     });
 }
 
-// Set side nav item to 'active' when 70% of the section is visible
+/**
+ * 
+ * @param {object} entries - The callback receives this list of IntersectionObserverEntry objects and the observer
+ */
 function activeSection(entries) {
     entries.forEach(entry => {
         const sectionId = entry.target.id;
