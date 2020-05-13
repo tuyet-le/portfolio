@@ -1,67 +1,42 @@
-/* Create a typewriter */
-class Typewriter {
-    constructor(txtElement, words, wait = 3000) {
-        this.txtElement = txtElement;
-        this.words = words;
-        this.wait = parseInt(wait, 10);
-        this.txt = '';
-        this.wordIndex = 0;
-        this.type();
-        this.isDeleting = false;
-    }
+/**
+  * Navigation is built dynamically as an unordered list
+ **/
 
-    type() {
-        // Current index of word
-        const current = this.wordIndex % this.words.length;
-        // Get full text of word
-        const fullTxt = this.words[current];
+/* --- Define Global Variables --- */
+const navList = document.getElementById('nav__list');
+const sections = document.querySelectorAll('section');
+const navLink = document.querySelectorAll('nav__link');
 
-        // Check if deleting
-        if (this.isDeleting) {
-            // Remove a character
-            this.txt = fullTxt.substring(0, this.txt.length - 1);
-        } else {
-            // Add a character
-            this.txt = fullTxt.substring(0, this.txt.length + 1);
-        }
-
-        // Insert text into element
-        this.txtElement.innerHTML = `<span class="cursor">${this.txt}</span>`;
-
-        // Initial type speed
-        let typeSpeed = 100;
-
-        // Increase the speed of deleting by half
-        if (this.isDeleting) {
-            typeSpeed /= 2;
-        }
-
-        // If the word is complete
-        if (!this.isDeleting && this.txt === fullTxt) {
-            // Add a pause at the end of the full text
-            typeSpeed = this.wait;
-            // Set delete to true
-            this.isDeleting = true;
-        } else if (this.isDeleting && this.txt === '') {
-            this.isDeleting = false;
-            // Move to the next word
-            this.wordIndex++;
-            // Pause before next word type
-            typeSpeed = 500;
-        }
-
-        setTimeout(() => this.type(), typeSpeed);
+/* --- Helper Functions --- */
+// Dynamically set multiple attributes to an element at once
+function setAttributes(el, attrs) {
+    for (let key in attrs) {
+        el.setAttribute(key, attrs[key]);
     }
 }
 
-// Init on DOM load
-document.addEventListener('DOMContentLoaded', init);
+/* --- Main Functions --- */
+function buildNav() {
+    // Loop over the sections
+    for (section of sections) {
+        console.log(section.id);
+        // Create menu links with a classname of 'nav__link'
+        const li = document.createElement('li');
+        li.classList.add('nav__link');
 
-// Init App
-function init() {
-    const txtElement = document.querySelector('.typewriter');
-    const words = JSON.parse(txtElement.getAttribute('data-words'));
-    const wait = txtElement.getAttribute('data-wait');
-    // Init typewriter
-    new Typewriter(txtElement, words, wait)
+        // Create anchors to link to page sections
+        const anchor = document.createElement('a');
+        setAttributes(anchor, {'href': '#'+section.id});
+
+        // Set anchor text to the data value of page sections
+        anchor.textContent = `${section.dataset.nav}`;
+
+        // Append anchor menu links
+        li.appendChild(anchor);
+
+        // Append menu links to the nav list
+        navList.append(li);
+    };
 }
+
+buildNav();
