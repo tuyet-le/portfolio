@@ -44,7 +44,7 @@ function buildNav() {
 // Create an intersection observer to detect the visibility of a section
 function createObserver() {
     let sectionOptions = {
-        threshold: 0.7 // When 70% of a section is visible on viewport, execute the observer's callback function (activeSection)
+        threshold: 0.5 // When 50% of a section is visible on viewport, execute the observer's callback function (activeSection)
     };
 
     let sectionObserver = new IntersectionObserver(activeSection, sectionOptions);
