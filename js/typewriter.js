@@ -1,7 +1,7 @@
-/* 
- * Create a typewriter
+/**
+ * Creates a new Typewriter.
+ * @class
 */
-
 class Typewriter {
     constructor(txtElement, words, wait = 3000) {
         this.txtElement = txtElement;
@@ -19,7 +19,6 @@ class Typewriter {
         // Get full text of word
         const fullTxt = this.words[current];
 
-        // Check if deleting
         if (this.isDeleting) {
             // Remove a character
             this.txt = fullTxt.substring(0, this.txt.length - 1);
@@ -65,6 +64,5 @@ function init() {
     const txtElement = document.querySelector('.typewriter');
     const words = JSON.parse(txtElement.getAttribute('data-words'));
     const wait = txtElement.getAttribute('data-wait');
-    // Init typewriter
     new Typewriter(txtElement, words, wait)
 }
