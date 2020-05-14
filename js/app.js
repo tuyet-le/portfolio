@@ -2,9 +2,10 @@
  * 
  * Program requirements:
  * 1. Dynamically build the navigation as an unordered list.
- * 2. Highlight the side nav item of section in viewport.
- * 3. Scroll to anchors from both navigations.
- * 4. Add a scroll to top button.
+ * 2. The burger menu icon should display a sliding side nav on smaller screens.
+ * 3. Highlight the side nav item of section in viewport.
+ * 4. Scroll to anchors from both navigations.
+ * 5. Add a scroll to top button.
  * 
  * JS Version: ES2015/ES6
  * 
@@ -17,6 +18,7 @@ const sections = document.querySelectorAll('section');
 const scrollToTopButton = document.getElementById('scrollToTopBtn');
 
 buildNav();
+slideNav();
 createObserver();
 
 /* --- Helper Functions --- */
@@ -35,7 +37,7 @@ function setAttributes(el, attrs) {
 /* --- Main Functions --- */
 // Build menu
 function buildNav() {
-    const navList = document.getElementById('nav__list');
+    const nav = document.getElementById('nav__list');
 
     for (section of sections) {
         const li = document.createElement('li');
@@ -44,8 +46,18 @@ function buildNav() {
         setAttributes(anchor, {'href': '#'+section.id});
         anchor.textContent = `${section.dataset.nav}`;
         li.appendChild(anchor);
-        navList.append(li);
+        nav.append(li);
     };
+}
+
+// Create a sliding side nav
+function slideNav() {
+    const burger = document.querySelector('.burger');
+    const nav = document.getElementById('nav__list');
+
+    burger.addEventListener('click', () => {
+        nav.classList.toggle('active-nav');
+    })
 }
 
 // Use the Intersection Observer API to detect 50% visibility of a section
