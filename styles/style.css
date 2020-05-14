@@ -590,8 +590,8 @@ a:hover {
   }
   /* Active style for sliding the nav back in on click */
   .active-nav {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
+    -webkit-transform: translateX(0%) !important;
+            transform: translateX(0%) !important;
   }
   .tech-grid {
     -ms-grid-columns: (1fr)[2];

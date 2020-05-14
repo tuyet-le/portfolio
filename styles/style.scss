@@ -504,7 +504,7 @@ a {
     }
     /* Active style for sliding the nav back in on click */
     .active-nav {
-        transform: translateX(0%);
+        transform: translateX(0%) !important;
     }
     
     .tech-grid {
