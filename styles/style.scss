@@ -181,21 +181,22 @@ a {
     justify-content: space-evenly;
     align-items: center;
     height: 200px;
-    width: 45px;
-    border-radius: 0 5px 5px 0;
+    width: 55px;
 
     a {
         display: block;
-        height: 12px;
-        width: 12px;
-        border-radius: 100%;
-        background: #FFF;
-        border: 1px solid $main-font-color;
+        color: $main-font-color;
+        font-size: 1.5rem;
+        border: none;
+
+        &:hover {
+            color: $main-pink;
+        }
     }
 
     /* Section active style */
     .active {
-        background: $main-blue;
+        color: $main-pink;
     }
 }
 

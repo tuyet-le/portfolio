@@ -202,22 +202,23 @@ a:hover {
       -ms-flex-align: center;
           align-items: center;
   height: 200px;
-  width: 45px;
-  border-radius: 0 5px 5px 0;
+  width: 55px;
   /* Section active style */
 }
 
 .side-nav a {
   display: block;
-  height: 12px;
-  width: 12px;
-  border-radius: 100%;
-  background: #FFF;
-  border: 1px solid #2A2A2A;
+  color: #2A2A2A;
+  font-size: 1.5rem;
+  border: none;
+}
+
+.side-nav a:hover {
+  color: #EF8C86;
 }
 
 .side-nav .active {
-  background: #05779E;
+  color: #EF8C86;
 }
 
 /* Hero Section */
