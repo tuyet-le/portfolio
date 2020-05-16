@@ -8,7 +8,7 @@ Technologies used: HTML5, CSS3, Sass, JavaScript
 ## Features
 * Top navigation menu is dynamically generated based on the number of sections added
 * Use of the IntersectionObserver API to style the side nav according to the section currently being viewed 
-* Responsive hamburger menu on smaller screens
+* Responsive hamburger menu for smaller screens with a max-width of 650px
 * Smooth scroll movement to anchor links
 * A fully responsive single page webpage without the use of libraries
 
