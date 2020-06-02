@@ -10,7 +10,7 @@ body {
   background: #FAFAFA;
   color: #2A2A2A;
   font-family: "Open Sans", sans-serif;
-  line-height: 1.5;
+  line-height: 1.7;
 }
 
 /* Typography */
@@ -209,7 +209,7 @@ a:hover {
 .side-nav a {
   display: block;
   color: #2A2A2A;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   border: none;
 }
 
@@ -289,8 +289,8 @@ a:hover {
 .tech-grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
   grid-gap: 3em;
   justify-items: center;
   margin: 1.5em 0 2.5em;
@@ -298,6 +298,11 @@ a:hover {
 
 .tech-grid__logo {
   width: 110px;
+}
+
+.tech-skill {
+  text-align: center;
+  font-weight: 700;
 }
 
 .btn {
@@ -360,6 +365,16 @@ a:hover {
   text-align: center;
   padding: 1em;
   border: 1px solid #E8E6E6;
+}
+
+.projects__grid .flex {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
 }
 
 .projects__grid .projects__links {
