@@ -83,9 +83,11 @@ function activeSection(entries) {
         const sectionId = entry.target.id;
         const activeAnchor = document.getElementById(`side-nav__${sectionId}`);
         if (entry.isIntersecting) {
-            activeAnchor.classList.add('active')
+            activeAnchor.classList.add('active');
+            activeAnchor.style.fontSize = '1.5rem';
         } else {
             activeAnchor.classList.remove('active');
+            activeAnchor.style.fontSize = '1.1rem';
         }
     })
 }
