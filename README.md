@@ -1,7 +1,7 @@
 # Front-End Developer Portfolio
 
 ## About
-A project to build my personal portfolio website from scratch with the aim of creating elements dynamically. This was originally submitted as one of my projects for the Udacity Front-End Developer Nanodegree program I enrolled on.
+A project to build my personal portfolio website from scratch with the aim of creating elements dynamically. This was originally submitted as one of my projects for the Udacity Front-End Developer Nanodegree program.
 
 Project review:
 > This is one of the coolest designs I have seen for this project.
