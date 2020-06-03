@@ -1,7 +1,17 @@
 # Front-End Developer Portfolio
 
 ## About
-A project to build my personal portfolio landing page from scratch with the aim of creating elements dynamically.
+A project to build my personal portfolio landing page from scratch with the aim of creating elements dynamically. This was originally submitted as one of my projects for the Udacity Front-End Developer Nanodegree program.
+
+Project review:
+> This is one of the coolest designs I have seen for this project.
+> Also, I appreciate that you have put good content in the sections instead of putting some random stuff (which most students do).
+> The side navbar looks really great.
+> The code work is very nice and precise. The IntersectionObserver is nicely used to compute the active section.
+> Well done for using arrow functions introduced in ES6.
+> I liked that you implemented some extra functionalities like go to top button shown at the bottom of the screen.
+
+> Good luck for the future. :thumbsup:
 
 Technologies used: HTML5, CSS3, Sass, JavaScript
 
