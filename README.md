@@ -10,7 +10,6 @@ Project review:
 > The code work is very nice and precise. The IntersectionObserver is nicely used to compute the active section.
 > Well done for using arrow functions introduced in ES6.
 > I liked that you implemented some extra functionalities like go to top button shown at the bottom of the screen.
-
 > Good luck for the future. :thumbsup:
 
 Technologies used: HTML5, CSS3, Sass, JavaScript
