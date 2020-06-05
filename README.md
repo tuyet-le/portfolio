@@ -1,7 +1,7 @@
 # Front-End Developer Portfolio
 
 ## About
-A project to build my personal portfolio website from scratch with the aim of creating elements dynamically. This was originally submitted as one of my projects for the Udacity Front-End Developer Nanodegree program.
+My personal front-end web development portfolio built with the aim of creating elements dynamically. My portfolio showcases featured projects and an overbrief of my background and skills. This project was originally submitted as one of the projects for the Udacity Front-End Developer Nanodegree program.
 
 Project review:
 > This is one of the coolest designs I have seen for this project.
@@ -20,7 +20,6 @@ Technologies used: HTML5, CSS3, Sass, JavaScript
 * Responsive hamburger menu for smaller screens with a max-width of 650px
 * Smooth scroll movement to anchor links
 * A fully responsive single page webpage without the use of libraries
-
 
 ## Additional improvements to be made
 * Refactoring is needed to generate more CSS with Sass
