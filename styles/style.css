@@ -50,6 +50,14 @@ a:hover {
   letter-spacing: 2px;
 }
 
+.email {
+  color: #2A2A2A;
+}
+
+.email:hover {
+  color: #FFF;
+}
+
 /* ---- Layout Rules ---- */
 .container {
   width: 90%;
@@ -572,7 +580,7 @@ a:hover {
 }
 
 @media (max-width: 650px) {
-  body {
+  body, html {
     overflow-x: hidden;
   }
   .burger {
