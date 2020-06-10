@@ -313,6 +313,11 @@ a {
         border: 1px solid $border-color;
     }
 
+    .projects__summary {
+        text-align: left;
+        padding: .5em 0;
+    }
+
     .flex {
         align-items: center;
         justify-content: center;
@@ -321,13 +326,14 @@ a {
 
     .projects__links {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
 
         a {
             color: $main-font-color;
             border: 1px solid $main-font-color;
             border-radius: 30px;
-            padding: 10px 20px;
+            padding: 5px 15px;
+            margin: .5em .4em;
 
             &:hover {
                 background: $main-yellow;
@@ -476,7 +482,6 @@ a {
     }
 
     .projects__links {
-        flex-direction: column;
         align-items: center;
         
         a {
