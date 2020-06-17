@@ -318,7 +318,7 @@ a {
         flex-direction: column;
         text-align: center;
         padding: 1em;
-        border: 1px solid $border-color;
+        border: 1px solid lighten($main-font-color, 60%);
     }
 
     .projects__gif {
