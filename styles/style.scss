@@ -323,7 +323,8 @@ a {
 
     .projects__gif {
         width: 100%;
-        padding-top: .5em;
+        margin-top: 1em;
+        box-shadow: 3px -1px 5px #CCC;
     }
 
     .projects__summary {
