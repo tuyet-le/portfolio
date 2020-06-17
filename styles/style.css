@@ -375,6 +375,10 @@ a:hover {
   border: 1px solid #E8E6E6;
 }
 
+.projects__grid .projects__gif {
+  width: 100%;
+}
+
 .projects__grid .projects__summary {
   text-align: left;
   padding: .5em 0;
@@ -410,18 +414,6 @@ a:hover {
 .projects__grid .projects__links a:hover {
   background: #FCB677;
   color: #2A2A2A;
-}
-
-.projects__grid .fa-cloud-sun, .projects__grid .projects--yellow {
-  color: #FCB677;
-}
-
-.projects__grid .fa-user-edit, .projects__grid .projects--pink {
-  color: #EF8C86;
-}
-
-.projects__grid .fa-copy, .projects__grid .projects--purple {
-  color: #826782;
 }
 
 /* Contacts Section */
