@@ -533,13 +533,13 @@ a:hover {
   border-radius: 50%;
   padding: .4em;
   outline: none;
-  border: 1px solid #FCB677;
+  border: 1px solid #fba95e;
   background: transparent;
   cursor: pointer;
 }
 
 #scrollToTopBtn i {
-  color: #FCB677;
+  color: #fb9b45;
 }
 
 .burger {
