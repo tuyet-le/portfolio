@@ -371,12 +371,13 @@ a:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  padding: 1em;
+  padding: 1.5em;
   border: 1px solid #c3c3c3;
 }
 
 .projects__grid .projects__gif {
   width: 100%;
+  padding-top: .5em;
 }
 
 .projects__grid .projects__summary {
@@ -572,7 +573,7 @@ a:hover {
 }
 
 @media (max-width: 650px) {
-  body, html {
+  body, html, .container {
     overflow-x: hidden !important;
   }
   .burger {
