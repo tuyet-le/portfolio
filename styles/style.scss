@@ -385,10 +385,12 @@ a {
         font-size: 1rem;
         cursor: pointer;
         transition: .2s ease;
+        -webkit-appearance: none;
 
         &:hover {
             background: #EF8C86;
             border: 1px solid #EF8C86;
+            -webkit-appearance: none;
         }
     }
 }

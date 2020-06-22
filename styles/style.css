@@ -448,11 +448,13 @@ a:hover {
   cursor: pointer;
   -webkit-transition: .2s ease;
   transition: .2s ease;
+  -webkit-appearance: none;
 }
 
 .contact__form input[type=submit]:hover {
   background: #EF8C86;
   border: 1px solid #EF8C86;
+  -webkit-appearance: none;
 }
 
 .contact__social {
