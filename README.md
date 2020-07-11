@@ -20,8 +20,3 @@ Technologies used: HTML5, CSS3, Sass, JavaScript
 * Responsive hamburger menu for smaller screens with a max-width of 650px
 * Smooth scroll movement to anchor links
 * A fully responsive single page webpage without the use of libraries
-
-## Additional improvements to be made
-* Refactoring is needed to generate more CSS with Sass
-* New projects to be added and older projects to be refactored
-* Upload an updated CV
