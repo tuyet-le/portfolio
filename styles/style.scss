@@ -249,12 +249,12 @@ a {
 .tech-grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-gap: 1em;
+    grid-gap: .9em;
     justify-items: center;
     margin: 1em 0;
 
     &__logo {
-        width: 90px;
+        width: 70px;
     }
 }
 

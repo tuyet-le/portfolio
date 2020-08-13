@@ -292,13 +292,13 @@ a:hover {
   display: grid;
   -ms-grid-columns: (1fr)[6];
       grid-template-columns: repeat(6, 1fr);
-  grid-gap: 1em;
+  grid-gap: .9em;
   justify-items: center;
   margin: 1em 0;
 }
 
 .tech-grid__logo {
-  width: 90px;
+  width: 70px;
 }
 
 .tech-skill {
@@ -427,7 +427,7 @@ a:hover {
   width: 100%;
   border-radius: 5px;
   border: 1px solid #E8E6E6;
-  /*outline: none;*/
+  outline: none;
   padding: 15px 20px;
   margin: 5px;
   letter-spacing: 1px;
@@ -531,7 +531,7 @@ a:hover {
   bottom: 10px;
   border-radius: 50%;
   padding: .4em;
-  /*outline: none;*/
+  outline: none;
   border: 1px solid #fba95e;
   background: transparent;
   cursor: pointer;
