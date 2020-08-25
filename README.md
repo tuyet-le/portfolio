@@ -1,7 +1,7 @@
 # Front-End Developer Portfolio
 
 ## About
-My personal front-end web development portfolio showcasing featured personal projects and an overbrief of my background and skills. This project was originally submitted as the second project for the [Udacity Front End Developer Nanodegree](https://www.udacity.com/course/front-end-web-developer-nanodegree--nd0011).
+My personal front-end web development portfolio showcasing featured projects and an overbrief of my background and skills. This project was originally submitted as the second project for the [Udacity Front End Developer Nanodegree](https://www.udacity.com/course/front-end-web-developer-nanodegree--nd0011) to gain more experience with JavaScript.
 
 Project review:
 > This is one of the coolest designs I have seen for this project.
@@ -14,7 +14,7 @@ Project review:
 
 Technologies used: HTML5, CSS3, Sass, JavaScript
 
-[Live website here](https://www.toowee.dev/)
+[Live website here deployed via Netlify](https://www.toowee.dev/)
 
 ## Features
 * Top navigation menu is dynamically generated based on the number of sections added
