@@ -1,7 +1,7 @@
 # Front-End Developer Portfolio
 
 ## About
-My personal front-end web development portfolio showcasing featured personal projects and an overbrief of my background and skills. This project was originally submitted as one of the projects for the Udacity Front-End Developer Nanodegree program.
+My personal front-end web development portfolio showcasing featured personal projects and an overbrief of my background and skills. This project was originally submitted as the second project for the [Udacity Front End Developer Nanodegree](https://www.udacity.com/course/front-end-web-developer-nanodegree--nd0011).
 
 Project review:
 > This is one of the coolest designs I have seen for this project.
