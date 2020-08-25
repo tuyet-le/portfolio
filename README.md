@@ -14,6 +14,8 @@ Project review:
 
 Technologies used: HTML5, CSS3, Sass, JavaScript
 
+[Live website here](https://www.toowee.dev/)
+
 ## Features
 * Top navigation menu is dynamically generated based on the number of sections added
 * Use of the IntersectionObserver API to style the side nav according to the section currently being viewed 
