@@ -358,13 +358,13 @@ a:hover {
 .projects__grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2em;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.5em;
 }
 
 .projects__grid .projects__title {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .projects__grid .projects__card {
@@ -379,13 +379,13 @@ a:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  padding: 1.5em;
+  padding: 0.8em;
   border: 1px solid #c3c3c3;
 }
 
 .projects__grid .projects__gif {
   width: 100%;
-  margin-top: 1em;
+  margin-top: 0.8em;
   -webkit-box-shadow: 3px -1px 5px #ccc;
           box-shadow: 3px -1px 5px #ccc;
 }
@@ -417,8 +417,8 @@ a:hover {
 .projects__grid .projects__links a {
   color: #2A2A2A;
   border: 1px solid #2A2A2A;
-  border-radius: 30px;
-  padding: 5px 15px;
+  border-radius: 10px;
+  padding: 5px 10px;
   margin: 0.5em 0.4em;
 }
 
