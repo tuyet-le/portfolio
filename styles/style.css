@@ -29,8 +29,8 @@ h3 {
 a {
   text-decoration: none;
   color: #826782;
-  -webkit-transition: .2s ease;
-  transition: .2s ease;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
 }
 
 a:hover {
@@ -44,8 +44,8 @@ a:hover {
 
 .hero__role {
   background: #EF8C86;
-  padding: .2em .4em;
-  margin-top: .8em;
+  padding: 0.2em 0.4em;
+  margin-top: 0.8em;
   font-size: 1.56rem;
   letter-spacing: 2px;
 }
@@ -55,7 +55,7 @@ a:hover {
 }
 
 .email:hover {
-  color: #FFF;
+  color: #fff;
 }
 
 /* ---- Layout Rules ---- */
@@ -105,7 +105,7 @@ a:hover {
 .section__title {
   position: relative;
   margin-bottom: 1.5em;
-  opacity: .99;
+  opacity: 0.99;
 }
 
 .section__title:before {
@@ -143,7 +143,7 @@ a:hover {
 .page__footer {
   text-align: center;
   padding: 1em 0;
-  font-size: .8rem;
+  font-size: 0.8rem;
   border: 1px solid #FCB677;
 }
 
@@ -234,7 +234,7 @@ a:hover {
 
 #section1 .headline .typewriter > .cursor {
   border-right: 0.1rem solid #353535;
-  padding-right: .1em;
+  padding-right: 0.1em;
 }
 
 #section1 .scroll-down {
@@ -247,7 +247,7 @@ a:hover {
 
 #section1 .scroll-down a {
   text-decoration: none;
-  color: #FFF;
+  color: #fff;
   cursor: pointer;
   border: none;
 }
@@ -288,22 +288,32 @@ a:hover {
 
 /* About Section */
 .tech-grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[6];
-      grid-template-columns: repeat(6, 1fr);
-  grid-gap: .9em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   justify-items: center;
+  gap: 8px;
   margin: 1em 0;
-}
-
-.tech-grid__logo {
-  width: 70px;
 }
 
 .tech-skill {
   text-align: center;
   font-weight: 700;
+  padding: 6px 10px;
+  background: #FCB677;
+  border: 1px solid #FCB677;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .btn {
@@ -313,8 +323,8 @@ a:hover {
 .btn .btn__cv {
   position: relative;
   display: inline-block;
-  padding: .7em 1.5em;
-  margin-top: 2em;
+  padding: 0.7em 1.5em;
+  margin-top: 1em;
   z-index: 1;
   color: #2A2A2A;
   letter-spacing: 1px;
@@ -332,8 +342,8 @@ a:hover {
   height: 100%;
   border-radius: 5px;
   z-index: -1;
-  -webkit-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .btn .btn__cv:hover:before {
@@ -372,13 +382,13 @@ a:hover {
 .projects__grid .projects__gif {
   width: 100%;
   margin-top: 1em;
-  -webkit-box-shadow: 3px -1px 5px #CCC;
-          box-shadow: 3px -1px 5px #CCC;
+  -webkit-box-shadow: 3px -1px 5px #ccc;
+          box-shadow: 3px -1px 5px #ccc;
 }
 
 .projects__grid .projects__summary {
   text-align: left;
-  padding: .5em 0;
+  padding: 0.5em 0;
 }
 
 .projects__grid .flex {
@@ -405,7 +415,7 @@ a:hover {
   border: 1px solid #2A2A2A;
   border-radius: 30px;
   padding: 5px 15px;
-  margin: .5em .4em;
+  margin: 0.5em 0.4em;
 }
 
 .projects__grid .projects__links a:hover {
@@ -420,9 +430,9 @@ a:hover {
   margin: 0 auto;
 }
 
-.contact__form input[type=text],
-.contact__form input[type=email],
-.contact__form input[type=submit],
+.contact__form input[type="text"],
+.contact__form input[type="email"],
+.contact__form input[type="submit"],
 .contact__form textarea {
   width: 100%;
   border-radius: 5px;
@@ -433,21 +443,21 @@ a:hover {
   letter-spacing: 1px;
 }
 
-.contact__form input[type=submit] {
+.contact__form input[type="submit"] {
   text-transform: uppercase;
   background: #826782;
   border: 1px solid #826782;
-  color: #FFF;
+  color: #fff;
   font-size: 1rem;
   cursor: pointer;
-  -webkit-transition: .2s ease;
-  transition: .2s ease;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
   -webkit-appearance: none;
 }
 
-.contact__form input[type=submit]:hover {
-  background: #EF8C86;
-  border: 1px solid #EF8C86;
+.contact__form input[type="submit"]:hover {
+  background: #ef8c86;
+  border: 1px solid #ef8c86;
   -webkit-appearance: none;
 }
 
@@ -466,15 +476,15 @@ a:hover {
 
 .contact__social a {
   color: #2A2A2A;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
   border: none;
 }
 
 .contact__social a:hover {
   color: #05779E;
-  -webkit-animation: shake .5s;
-          animation: shake .5s;
+  -webkit-animation: shake 0.5s;
+          animation: shake 0.5s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
@@ -484,11 +494,14 @@ a:hover {
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
   }
-  10%, 90% {
+  10%,
+  90% {
     -webkit-transform: translate3d(-1px, 0, 0);
             transform: translate3d(-1px, 0, 0);
   }
-  20%, 30%, 80% {
+  20%,
+  30%,
+  80% {
     -webkit-transform: translate3d(2px, 0, 0);
             transform: translate3d(2px, 0, 0);
   }
@@ -496,7 +509,9 @@ a:hover {
     -webkit-transform: translate3d(-3px, 0, 0);
             transform: translate3d(-3px, 0, 0);
   }
-  40%, 60%, 70% {
+  40%,
+  60%,
+  70% {
     -webkit-transform: translate3d(3px, 0, 0);
             transform: translate3d(3px, 0, 0);
   }
@@ -507,11 +522,14 @@ a:hover {
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
   }
-  10%, 90% {
+  10%,
+  90% {
     -webkit-transform: translate3d(-1px, 0, 0);
             transform: translate3d(-1px, 0, 0);
   }
-  20%, 30%, 80% {
+  20%,
+  30%,
+  80% {
     -webkit-transform: translate3d(2px, 0, 0);
             transform: translate3d(2px, 0, 0);
   }
@@ -519,7 +537,9 @@ a:hover {
     -webkit-transform: translate3d(-3px, 0, 0);
             transform: translate3d(-3px, 0, 0);
   }
-  40%, 60%, 70% {
+  40%,
+  60%,
+  70% {
     -webkit-transform: translate3d(3px, 0, 0);
             transform: translate3d(3px, 0, 0);
   }
@@ -530,7 +550,7 @@ a:hover {
   right: 10px;
   bottom: 10px;
   border-radius: 50%;
-  padding: .4em;
+  padding: 0.4em;
   outline: none;
   border: 1px solid #fba95e;
   background: transparent;
@@ -548,7 +568,7 @@ a:hover {
 .burger div {
   width: 25px;
   height: 2px;
-  background: #FFF;
+  background: #fff;
   margin: 5px;
   cursor: pointer;
 }
@@ -571,7 +591,9 @@ a:hover {
 }
 
 @media (max-width: 650px) {
-  body, html, .container {
+  body,
+  html,
+  .container {
     overflow-x: hidden !important;
   }
   .burger {
@@ -615,7 +637,7 @@ a:hover {
   .tech-grid {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    grid-gap: .6em;
+    grid-gap: 0.6em;
   }
   .projects__grid {
     -ms-grid-columns: 1fr;
