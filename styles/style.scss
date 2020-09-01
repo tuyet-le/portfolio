@@ -246,6 +246,10 @@ a {
 }
 
 /* About Section */
+.container--about a {
+  font-weight: 700;
+}
+
 .tech-grid {
   display: flex;
   justify-content: center;

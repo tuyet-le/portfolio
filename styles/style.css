@@ -287,6 +287,10 @@ a:hover {
 }
 
 /* About Section */
+.container--about a {
+  font-weight: 700;
+}
+
 .tech-grid {
   display: -webkit-box;
   display: -ms-flexbox;
