@@ -309,8 +309,8 @@ a:hover {
   font-weight: 700;
   padding: 6px 10px;
   margin: 3px;
-  background: #FCB677;
-  border: 1px solid #FCB677;
+  background: transparent;
+  border: 1px solid #05779E;
   border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -416,14 +416,15 @@ a:hover {
 
 .projects__grid .projects__links a {
   color: #2A2A2A;
-  border: 1px solid #2A2A2A;
+  background: #FCB677;
+  border: 1px solid #FCB677;
   border-radius: 10px;
   padding: 5px 10px;
   margin: 0.5em 0.4em;
 }
 
 .projects__grid .projects__links a:hover {
-  background: #FCB677;
+  background: #fdd1a9;
   color: #2A2A2A;
 }
 

@@ -263,8 +263,8 @@ a {
   font-weight: 700;
   padding: 6px 10px;
   margin: 3px;
-  background: $main-yellow;
-  border: 1px solid $main-yellow;
+  background: transparent;
+  border: 1px solid $main-blue;
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -345,13 +345,14 @@ a {
 
     a {
       color: $main-font-color;
-      border: 1px solid $main-font-color;
+      background: $main-yellow;
+      border: 1px solid $main-yellow;
       border-radius: 10px;
       padding: 5px 10px;
       margin: 0.5em 0.4em;
 
       &:hover {
-        background: $main-yellow;
+        background: lighten($main-yellow, 10%);
         color: $main-font-color;
       }
     }
