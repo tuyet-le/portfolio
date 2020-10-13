@@ -311,7 +311,8 @@ a {
     flex-direction: column;
     text-align: center;
     padding: 0.8em;
-    border: 1px solid lighten($main-font-color, 60%);
+    border: 1px solid lighten($main-font-color, 45%);
+    background: #f9f9f9;
   }
 
   .projects__gif {

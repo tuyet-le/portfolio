@@ -372,7 +372,8 @@ a:hover {
           flex-direction: column;
   text-align: center;
   padding: 0.8em;
-  border: 1px solid #c3c3c3;
+  border: 1px solid #9d9d9d;
+  background: #f9f9f9;
 }
 
 .projects__grid .projects__gif {
