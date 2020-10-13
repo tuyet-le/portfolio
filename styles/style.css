@@ -301,7 +301,7 @@ a:hover {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   justify-items: center;
-  margin: 1em 0;
+  margin: 0.8em 0;
 }
 
 .tech-skill {
@@ -358,8 +358,8 @@ a:hover {
 .projects__grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
   grid-gap: 0.5em;
 }
 
@@ -386,8 +386,6 @@ a:hover {
 .projects__grid .projects__gif {
   width: 100%;
   margin-top: 0.8em;
-  -webkit-box-shadow: 3px -1px 5px #ccc;
-          box-shadow: 3px -1px 5px #ccc;
 }
 
 .projects__grid .projects__summary {
@@ -415,17 +413,18 @@ a:hover {
 }
 
 .projects__grid .projects__links a {
-  color: #2A2A2A;
-  background: #FCB677;
-  border: 1px solid #FCB677;
+  color: #fff;
+  background: #05779E;
+  border: 1px solid #05779E;
   border-radius: 10px;
   padding: 5px 10px;
   margin: 0.5em 0.4em;
 }
 
 .projects__grid .projects__links a:hover {
-  background: #fdd1a9;
-  color: #2A2A2A;
+  background: #079ccf;
+  border: 1px solid #079ccf;
+  color: #fff;
 }
 
 /* Contacts Section */
@@ -580,6 +579,10 @@ a:hover {
 
 /* Media Queries */
 @media (max-width: 768px) {
+  .container--about,
+  .projects__summary {
+    text-align: center !important;
+  }
   .tech-grid {
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
