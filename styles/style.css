@@ -28,7 +28,7 @@ h3 {
 
 a {
   text-decoration: none;
-  color: #826782;
+  color: #05779E;
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
 }
@@ -108,7 +108,7 @@ a:hover {
   position: absolute;
   top: 60%;
   left: 0;
-  height: 18px;
+  height: 16px;
   width: 60%;
   z-index: -1;
   border: 1px solid #EF8C86;
@@ -118,9 +118,9 @@ a:hover {
 .section__title:after {
   content: "";
   position: absolute;
-  top: 90%;
+  top: 80%;
   right: 0;
-  height: 18px;
+  height: 16px;
   width: 60%;
   z-index: 3;
   border: 1px solid #05779E;
@@ -408,14 +408,15 @@ a:hover {
   color: #fff;
   background: #05779E;
   border: 1px solid #05779E;
-  border-radius: 10px;
-  padding: 5px 10px;
+  border-radius: 5px;
+  padding: 5px 12px;
   margin: 0.5em 0.4em;
+  text-transform: lowercase;
 }
 
 .projects__grid .projects__links a:hover {
-  background: #079ccf;
-  border: 1px solid #079ccf;
+  background: #068ab7;
+  border: 1px solid #068ab7;
   color: #fff;
 }
 

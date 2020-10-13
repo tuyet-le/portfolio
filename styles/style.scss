@@ -29,7 +29,7 @@ h3 {
 
 a {
   text-decoration: none;
-  color: $main-purple;
+  color: $main-blue;
   transition: 0.2s ease;
 
   &:hover {
@@ -96,7 +96,7 @@ a {
   position: absolute;
   top: 60%;
   left: 0;
-  height: 18px;
+  height: 16px;
   width: 60%;
   z-index: -1;
   border: 1px solid $main-pink;
@@ -106,9 +106,9 @@ a {
 .section__title:after {
   content: "";
   position: absolute;
-  top: 90%;
+  top: 80%;
   right: 0;
-  height: 18px;
+  height: 16px;
   width: 60%;
   z-index: 3;
   border: 1px solid $main-blue;
@@ -338,13 +338,14 @@ a {
       color: #fff;
       background: $main-blue;
       border: 1px solid $main-blue;
-      border-radius: 10px;
-      padding: 5px 10px;
+      border-radius: 5px;
+      padding: 5px 12px;
       margin: 0.5em 0.4em;
+      text-transform: lowercase;
 
       &:hover {
-        background: lighten($main-blue, 10%);
-        border: 1px solid lighten($main-blue, 10%);
+        background: lighten($main-blue, 5%);
+        border: 1px solid lighten($main-blue, 5%);
         color: #fff;
       }
     }
