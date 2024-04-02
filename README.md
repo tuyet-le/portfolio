@@ -16,7 +16,7 @@ Project review:
 
 Technologies used: Simple HTML, CSS, Sass and JavaScript
 
-[Live website deployed via Netlify](https://www.toowee.dev/)
+Live website deployed on Netlify [here](https://v1-toowee-portfolio.netlify.app/).
 
 ## Features
 
